@@ -17,6 +17,7 @@ h1,h2{
     padding: 25px;
     margin: 0px;
     border-bottom: 10px solid black;
+    text-transform: uppercase;
 }
 
 p{
@@ -24,19 +25,7 @@ p{
     margin: 20px 0;
 }
 
-.citacoes {
-    background-color: #D9E5E3;
-    width: 250px;
-    margin: 20px 40px;
-    box-sizing: border-box;
-    border: 10px outset #C2CCCA ;
-    border-radius: 10px;
-    border-bottom-color: #333;
-    border-right-color: #851944;
-}
-
 .navegacao-site {
-    font-size: 30px;
     margin-bottom: 25px;
     background-color: #3C1D3D;
     color: #F2FFFC;
@@ -52,6 +41,8 @@ p{
 nav a {
     color: #F2FFFC;
     text-decoration: none;
+    text-transform: lowercase;
+    font-size:  19.5
 }
 
 main a {
@@ -66,6 +57,16 @@ aside a {
 
 .icones_redes_sociais li {
     display: inline-block;
+}
+
+.icones_redes_sociais a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    /*text-indent: -99999px;
+    font-size: 0; 
+    serve para esconder as palavras da bio.html (github, twitter, linkedin) */
+    color: transparent;
 }
 
 blockquote, aside, footer{
@@ -87,7 +88,8 @@ em{
 }
 
 h2 {
-	font-size: 30px;
+    font-size: 30px;
+    clear: both;
 }
 
 article {
@@ -96,17 +98,53 @@ article {
     margin-bottom: 20px;
 }
 
-.artigo {
-	padding-bottom: 30px;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: 20px;
+.github{
+    background-image: url(../img/github.png);
 }
 
-.leia_mais {
-    padding: 8px;
-    margin: 16px;
-    display: block;
-    font-size: 24px;
-    text-align: center;
-    background-color: #E6E7E8;
+.twitter{
+    background-image: url(../img/twitter.png);
+}
+
+.linkedin{
+    background-image: url(../img/linkedin.png);
+}
+
+aside{
+    float: right;
+    width: 15%;
+    clear: right;
+    box-sizing: border-box;
+    position: relative;
+    top: 300px;
+}
+
+main {
+    float: left;
+    width: 85%;
+    padding-bottom: 80px;
+}
+
+footer{
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navegacao-site, .minha_foto {
+    float: right;
+	width: 15%;
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+.minha_foto{
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
